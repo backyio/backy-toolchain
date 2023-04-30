@@ -19,3 +19,30 @@
 
 # Go workspace file
 go.work
+/buffalo
+/certs/ca.crt
+/certs/client.root.crt
+/certs/client.root.key
+/certs/node.crt
+/certs/node.key
+/cockroach
+/go-micro
+/goa
+/hugo
+/include/google/protobuf/any.proto
+/include/google/protobuf/api.proto
+/include/google/protobuf/compiler/plugin.proto
+/include/google/protobuf/descriptor.proto
+/include/google/protobuf/duration.proto
+/include/google/protobuf/empty.proto
+/include/google/protobuf/field_mask.proto
+/include/google/protobuf/source_context.proto
+/include/google/protobuf/struct.proto
+/include/google/protobuf/timestamp.proto
+/include/google/protobuf/type.proto
+/include/google/protobuf/wrappers.proto
+/migrate
+/mycert/ca.key
+/openapi-generator-cli.jar
+/protoc
+/sqlc
