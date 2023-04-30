@@ -37,6 +37,7 @@ hugo:
 	@rm -f ./README.md
 	@rm -f ./LICENSE
 	wget https://github.com/gohugoio/hugo/releases/download/v0.111.3/hugo_0.111.3_linux-amd64.tar.gz
+	@tar xzvf hugo_0.111.3_linux-amd64.tar.gz
 	@rm -f ./hugo_0.111.3_linux-amd64.tar.gz
 	@rm -f ./README.md
 	@rm -f ./LICENSE
