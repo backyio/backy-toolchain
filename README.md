@@ -4,7 +4,6 @@ Standard toolchain for Backy.io projects
 <br>
 
 ## Overview
----
 
 <br>
 
@@ -20,7 +19,6 @@ Standard toolchain for Backy.io projects
 <br>
 
 ## Dependencies
----
 <br>
 
 * Installed go with windows and linux packages
@@ -30,7 +28,6 @@ Standard toolchain for Backy.io projects
 
 
 ## Installation
----
 ```
     make install   // install all entire component
     make nodb      // install without cockroachdb
