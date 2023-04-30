@@ -50,8 +50,8 @@ goadesign:
 	$(info Installing Goa.Design)
 	$(info --------------------------------------------------------------------)
 	@git clone --branch v3 https://github.com/goadesign/goa.git
-	@cd goa; GOARCH=amd64 GOOS=windows go build -o ../goaa ./cmd/goa
-	@cd goa; GOARCH=amd64 GOOS=linux go build -o ../goaa.exe ./cmd/goa
+	@cd goa; GOARCH=amd64 GOOS=windows go build -o ../goaa.exe ./cmd/goa
+	@cd goa; GOARCH=amd64 GOOS=linux go build -o ../goaa ./cmd/goa
 	@rm -f -R ./goa
 	@mv ./goaa ./goa
 	@chmod +x ./goa
@@ -82,8 +82,8 @@ gomicro:
 	$(info Installing Go-Micro command line tools)
 	$(info --------------------------------------------------------------------)
 	@git clone https://github.com/backyio/go-micro-cli.git
-	@cd go-micro-cli; GOARCH=amd64 GOOS=windows go build -o ../go-micro ./cmd/go-micro
-	@cd go-micro-cli; GOARCH=amd64 GOOS=linux go build -o ../go-micro.exe ./cmd/go-micro
+	@cd go-micro-cli; GOARCH=amd64 GOOS=windows go build -o ../go-micro.exe ./cmd/go-micro
+	@cd go-micro-cli; GOARCH=amd64 GOOS=linux go build -o ../go-micro ./cmd/go-micro
 	@rm -f -R ./go-micro-cli
 	@chmod +x ./go-micro
 
