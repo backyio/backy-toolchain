@@ -108,6 +108,16 @@ cockroachdb:
 	@rm -f -R ./cockroach-v22.2.8.windows-6.2-amd64/
 	@rm -f ./cockroach-v22.2.8.windows-6.2-amd64.zip
 
+goreleaser:
+	$(info Installing GoReleaseer)
+	$(info --------------------------------------------------------------------)
+	@wget https://github.com/goreleaser/goreleaser/releases/download/v1.18.1/goreleaser_Windows_x86_64.zip
+	@unzip -o ./goreleaser_Windows_x86_64.zip
+	@rm -f goreleaser_Windows_x86_64.zip
+	@wget https://github.com/goreleaser/goreleaser/releases/download/v1.18.1/goreleaser_Linux_x86_64.tar.gz
+	@tar xzfv goreleaser_Linux_x86_64.tar.gz
+	@rm -f goreleaser_Linux_x86_64.tar.gz
+
 dbcert:
 	$(info Generate CockroachDB cluster certificates)
 	$(info --------------------------------------------------------------------)
@@ -117,8 +127,8 @@ dbcert:
 	@COCKROACH_SKIP_KEY_PERMISSION_CHECK=true cockroach cert create-node localhost --certs-dir=./certs --ca-key=./mycert/ca.key	
 	@COCKROACH_SKIP_KEY_PERMISSION_CHECK=true cockroach cert create-client root --certs-dir=./certs --ca-key=./mycert/ca.key
 
-all: buffalo protoc hugo goadesign openapi goadesign migrate sqlc gomicro cockroachdb dbcert
+all: buffalo protoc hugo goadesign openapi goadesign migrate sqlc gomicro cockroachdb dbcert goreleaser
 
-nodb: buffalo protoc hugo goadesign openapi goadesign migrate sqlc gomicro
+nodb: buffalo protoc hugo goadesign openapi goadesign migrate sqlc gomicro goreleaser
 
 install: all
