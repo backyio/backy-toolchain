@@ -16,7 +16,7 @@ Standard toolchain for Backy.io projects
 * Type-safe sql query compiler - [SqlC](https://sqlc.dev/)
 * Micro service framework - [Go-Micro](https://github.com/go-micro/go-micro/)
 * Database - [Cockroachdb](https://www.cockroachlabs.com/)
-* Database - [GoReleaser](https://goreleaser.com/)
+* Release management - [GoReleaser](https://goreleaser.com/)
 <br>
 
 ## Dependencies

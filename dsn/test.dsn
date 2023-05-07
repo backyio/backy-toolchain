@@ -1,0 +1,1 @@
+"cockroachdb://root@localhost:26257/backy?x-migrations-table=dbmigration&sslmode=verify-full&sslrootcert=CERTPATH/certs/ca.crt&sslcert=CERTPATH/certs/client.root.crt&sslkey=CERTPATH/certs/client.root.key"
