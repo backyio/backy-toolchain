@@ -1,10 +1,8 @@
-# toolchain
+# Toolchain
 Standard toolchain for Backy.io projects
 
-<br>
-
 ## Overview
-
+Backy using the following tools
 <br>
 
 * Webadmin tools - [Go-Buffalo](https://gobuffalo.io/)
@@ -20,12 +18,10 @@ Standard toolchain for Backy.io projects
 <br>
 
 ## Dependencies
-<br>
 
 * Installed go with windows and linux packages
 * Linux Make
 
-<br>
 
 
 ## Installation
