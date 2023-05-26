@@ -45,7 +45,7 @@ hugo:
 openapi:
 	$(info Installing Openapi Generator)
 	$(info --------------------------------------------------------------------)
-	@wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/6.5.0/openapi-generator-cli-6.5.0.jar -O openapi-generator-cli.jar
+	@wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/6.6.0/openapi-generator-cli-6.6.0.jar -O openapi-generator-cli.jar
 
 goadesign:
 	$(info Installing Goa.Design)
@@ -58,6 +58,16 @@ goadesign:
 	@chmod +x ./goa
 	@mv ./goaa.exe ./goa.exe
 
+pgv:
+	$(info Installing Protoc gen validator)
+	$(info --------------------------------------------------------------------)
+	@wget https://github.com/bufbuild/protoc-gen-validate/releases/download/v1.0.1/protoc-gen-validate_1.0.1_linux_amd64.tar.gz
+	@tar xzvf ./protoc-gen-validate_1.0.1_linux_amd64.tar.gz
+	@rm -f ./protoc-gen-validate_1.0.1_linux_amd64.tar.gz
+	@wget https://github.com/bufbuild/protoc-gen-validate/releases/download/v1.0.1/protoc-gen-validate_1.0.1_windows_amd64.tar.gz
+	@tar xzvf  /protoc-gen-validate_1.0.1_windows_amd64.tar.gz
+	@rm -f ./protoc-gen-validate_1.0.1_windows_amd64.tar.gz
+
 migrate:
 	$(info Installing Sql Migrate)
 	$(info --------------------------------------------------------------------)
@@ -68,16 +78,6 @@ migrate:
 	@mv ./migratee ./migrate
 	@chmod +x ./migrate
 	@mv ./migratee.exe ./migrate.exe
-
-sqlc:
-	$(info Installing SqlC compiler)
-	$(info --------------------------------------------------------------------)
-	@wget https://github.com/kyleconroy/sqlc/releases/download/v1.18.0/sqlc_1.18.0_linux_amd64.tar.gz
-	@tar xzvf ./sqlc_1.18.0_linux_amd64.tar.gz
-	@rm -f ./sqlc_1.18.0_linux_amd64.tar.gz
-	@wget https://github.com/kyleconroy/sqlc/releases/download/v1.18.0/sqlc_1.18.0_windows_amd64.zip
-	@unzip -o ./sqlc_1.18.0_windows_amd64.zip
-	@rm -f ./sqlc_1.18.0_windows_amd64.zip
 
 gomicro:
 	$(info Installing Go-Micro command line tools)
